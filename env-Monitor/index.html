@@ -17,16 +17,19 @@
                 the environment monitoring website, <a href="#" class="text-purple-500 font-semibold">Learn More</a>
               </p>
             </div>
-          </div>
+          </div>  
           <div class="w-full lg:w-1/2 px-12 py-16">
             <h3 class="text-3xl mb-4">Set up Nature-Connect</h3>
             <p>
-              assign the parameters to your device
+              assign the network credentials for your device
+              <br />
             </p>
-            <form action="#">
+            <form action="/submit">
               <div class="grid grid-cols-2">
-               <input type="text" placeholder="SSID" class="border border-gray-5 py-1 px-2">
-               <input type="password" placeholder="Password" class="border border-gray-5 py-1 px-2">
+               <label for="ssid">SSID : </label>
+               <input id="ssid" name="ssid" type="text" placeholder="SSID" class="border border-gray-5 py-1 px-2">
+               <label for="password">password : </label>
+               <input type="password" name="password" placeholder="Password" class="border border-gray-5 py-1 px-2">
               </div>
               <div class="mt-5">
                <input type="email" placeholder="Email" class="border border-gray-5 py-1 px-2">
@@ -38,7 +41,7 @@
                </span>
               </div>
               <div class="mt-5">
-                <button class="w-full bg-purple-500 py-3 text-center text-white">
+                <button type="submit" value="Submit" class="w-full bg-purple-500 py-3 text-center text-white">
                   Register Device
                 </button>
               </div>
